@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+
+<body>
+    <main class="container">
+        <h1>Guess the Number (1–100)</h1>
+
+        <div class="game">
+            <label for="guessInput">Your guess:</label>
+            <input id="guessInput" type="number" min="1" max="100" />
+            <button id="guessBtn">Guess</button>
+            <p id="feedback" class="feedback">Make a guess to start!</p>
+            <p id="attempts">Attempts: 0</p>
+
+            <div class="controls">
+                <button id="restartBtn">Restart Game</button>
+            </div>
+        </div>
+
+        <footer>
+            <small>Built with Flask • Server-side session stores the secret number</small>
+        </footer>
+    </main>
+
+    <script src="/static/js/main.js"></script>
+</body>
+
+</html>
