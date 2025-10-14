@@ -1,0 +1,91 @@
+:root {
+    --bg: #fffafc;
+    --card: #fff;
+    --accent: #ff6b9a;
+    --muted: #666;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: rgb(234, 173, 183) (--bg);
+    margin: 0;
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 480px;
+    margin-top: 40px;
+}
+
+h1 {
+    color: rgb(241, 121, 141) (--accent);
+    text-align: center;
+}
+
+.game {
+    background: rgb(192, 66, 87) (--card);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(249, 73, 155, 0.06);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+button {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 6px;
+    background: var(--accent);
+    color: rgb(245, 248, 203);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+.feedback {
+    font-size: 16px;
+    margin-top: 8px;
+    color: var(--muted);
+}
+
+.controls {
+    margin-top: 12px;
+    display: flex;
+    gap: 8px;
+}
+
+#restartBtn {
+    background: #f0afaf;
+}
+
+footer {
+    text-align: center;
+    margin-top: 14px;
+    color: #f98f8f;
+    font-size: 13px;
+}
