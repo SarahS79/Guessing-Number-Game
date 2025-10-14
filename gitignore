@@ -1,0 +1,5 @@
+--pycache--/
+instance/
+.env
+.venv/
+#.pyc
